@@ -164,7 +164,7 @@ string DecisionTree::predictID3(TreeNode * root, const DataPoint & test) {
         return predictID3(root->children[test.wind], test);
     }
 
-    return "";
+    return " unknown ";
 }
 
 // 使用 C4.5 进行预测
@@ -186,7 +186,7 @@ string DecisionTree::predictC45(TreeNode* root, const DataPoint& test) {
         return predictC45(root->children[test.wind], test);
     }
 
-    return "";
+    return " unknown ";
 }
 
 

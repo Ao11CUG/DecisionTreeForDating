@@ -38,7 +38,7 @@ public:
     // 使用 C4.5 进行预测
     string predictC45(TreeNode* root, const DataPoint& test);
 
-    bool useC45;  // 是否使用C4.5
+    bool useC45 = false;  // 是否使用C4.5
 
     // 用于存储训练数据和测试数据
     vector<DataPoint> trainData;

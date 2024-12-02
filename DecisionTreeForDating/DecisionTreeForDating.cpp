@@ -159,6 +159,10 @@ void DecisionTreeForDating::beginPredict() {
 
     // 创建决策树并训练
     vector<string> features = { "weather", "temperature", "humidity", "wind" };
+
+    // 判断是否使用信息增益率
+    if (selectedAlgorithm == "C4.5") decisionTree.useC45 == true;
+
     root = decisionTree.buildTree(decisionTree.trainData, features);  // 更新全局根节点
 
     if (!root) {
